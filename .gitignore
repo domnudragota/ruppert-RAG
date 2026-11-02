@@ -1,0 +1,103 @@
+# Ruppert — safe defaults for a PUBLIC repository.
+# This is defense in depth, not a guarantee against disclosure.
+
+# PRIVATE: local documents, indexed content, database snapshots
+/knowledge/
+/data/
+/private/
+/secrets/
+/local/
+/notes/
+/scratch/
+/reports/
+/exports/
+/inputs/
+/outputs/
+/workspaces/
+/repositories/
+/repos/
+
+# Python virtual environments and generated artifacts
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyright/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage/
+build/
+dist/
+
+# Secrets and machine-local configuration
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+.envrc
+*.pem
+*.key
+*.p12
+*.pfx
+*.p8
+*.kdbx
+id_rsa*
+id_ed25519*
+.netrc
+.pypirc
+.npmrc
+
+# Databases, journals, dumps and generated local indexes
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.dump
+*.bak
+*.backup
+
+# Potentially private dataset exports and local notebooks
+*.csv
+*.tsv
+*.jsonl
+*.ndjson
+*.parquet
+*.feather
+*.arrow
+*.pkl
+*.pickle
+*.ipynb
+.ipynb_checkpoints/
+
+# Logs, temporary files, editor and OS metadata
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+.cache/
+.tmp/
+tmp/
+temp/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.code-workspace
+
+# Nested project build outputs (for future repository scanning)
+node_modules/
+target/
+.next/
+.nuxt/
